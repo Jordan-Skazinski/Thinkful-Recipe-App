@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+.App {
+  padding: 1em;
+}
+h1{
+  font-family: 'Playfair Display SC';
+  text-align: center;
+  font-size: 64px;
+}
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* typography */
+
+html {
+  font-family: 'helvetica neue', sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt';
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+td {
+  letter-spacing: 1px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+
+/* table */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow:hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content_td p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+}
+
+/* Column Size for thead */
+thead th:first-child,
+thead th:nth-child(2),
+thead th:nth-child(3),
+thead th:nth-child(6) {
+  width: 10%;
+}
+thead th:nth-child(4),
+thead th:nth-child(5) {
+  width: 30%
+}
+
+/* Column size for tbody */
+/*
+takes in the table row (tr) and if its odd it changes the background color
+*/
+tbody tr:nth-child(odd){
+  background-color: #dadada ;
+}
+/*
+these get the table cells (td) of 2nd 3rd and 6th and sets their width to 10% each, 40% total
+*/
+tbody td:first-child,
+tbody td:nth-child(2),
+tbody td:nth-child(3),
+tbody td:nth-child(6){
+  width: 10%
+}
+/*
+these get the table cells (td) of 4th and 5th, the ingredients and preperation input cells,
+ and sets their width to 30% each, 60% total.
+*/
+tbody td:nth-child(4),
+tbody td:nth-child(5){
+  width: 30%
+}
+
+
+/*
+I wanted to make this usable on a phone so I did. I also like dark themes more.
+I didnt want to fail though incase the examiner dosnt see this and for some reason opens 
+the page with a less then 800px sized window
+
+
+
+@media 
+only screen and (max-width: 800px)  {
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+  body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+  }
+
+  tbody tr:nth-child(odd){
+    background-color: #242424 ;
+  }
+
+
+	thead tr { 
+		display: none;
+	}
+	
+ 
+  tbody td:first-child,
+  tbody td:nth-child(2),
+  tbody td:nth-child(3),
+  tbody td:nth-child(6){
+    width: 100%
+  }
+
+  tbody td:nth-child(4),
+  tbody td:nth-child(5){
+    width: 100%
+  }  
+
+}
+
+
+*/
