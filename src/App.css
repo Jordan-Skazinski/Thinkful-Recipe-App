@@ -105,10 +105,6 @@ tbody td:nth-child(5){
 }
 
 
-/*
-I wanted to make this usable on a phone so I did. I also like dark themes more.
-I didnt want to fail though incase the examiner dosnt see this and for some reason opens 
-the page with a less then 800px sized window
 
 
 
@@ -149,4 +145,3 @@ only screen and (max-width: 800px)  {
 }
 
 
-*/
